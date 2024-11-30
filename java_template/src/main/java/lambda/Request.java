@@ -9,6 +9,7 @@ public class Request {
     String name;
 	private String bucketname;
 	private String filename;
+	private String filterType;
 
     public String getName() {
         return name;
@@ -36,6 +37,14 @@ public class Request {
 
 	public void setFilename(String filename) {
 		this.filename = filename;
+	}
+
+	public String getFilterType() {
+		return this.filterType;
+	}
+
+	public void setFilterType(String filterType) {
+		this.filterType = filterType;
 	}
 
     public Request(String name) {
